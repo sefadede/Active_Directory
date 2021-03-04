@@ -35,17 +35,17 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnMinimaze = new DevExpress.XtraEditors.SimpleButton();
+            this.btnClose = new DevExpress.XtraEditors.SimpleButton();
+            this.txtDomainName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDomainName = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnMinimaze = new DevExpress.XtraEditors.SimpleButton();
-            this.btnClose = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,80 @@
             this.panel1.Size = new System.Drawing.Size(397, 403);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(48, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(314, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Active Directory Users and Computers";
+            // 
+            // btnMinimaze
+            // 
+            this.btnMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimaze.Appearance.Font = new System.Drawing.Font("Webdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btnMinimaze.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimaze.Appearance.Options.UseFont = true;
+            this.btnMinimaze.Appearance.Options.UseForeColor = true;
+            this.btnMinimaze.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnMinimaze.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimaze.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnMinimaze.Location = new System.Drawing.Point(321, 2);
+            this.btnMinimaze.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimaze.Name = "btnMinimaze";
+            this.btnMinimaze.Size = new System.Drawing.Size(32, 32);
+            toolTipTitleItem1.Text = "Aşağı indir";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.btnMinimaze.SuperTip = superToolTip1;
+            this.btnMinimaze.TabIndex = 19;
+            this.btnMinimaze.Text = "0";
+            this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnClose.Location = new System.Drawing.Point(361, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(32, 32);
+            toolTipTitleItem2.Text = "Uygulamayı Kapat";
+            toolTipItem1.LeftIndent = 6;
+            toolTipItem1.Text = "Uygulamadan çıkmak için kullanınız";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            superToolTip2.Items.Add(toolTipItem1);
+            this.btnClose.SuperTip = superToolTip2;
+            this.btnClose.TabIndex = 18;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // txtDomainName
+            // 
+            this.txtDomainName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.txtDomainName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDomainName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDomainName.ForeColor = System.Drawing.Color.White;
+            this.txtDomainName.Location = new System.Drawing.Point(155, 324);
+            this.txtDomainName.Name = "txtDomainName";
+            this.txtDomainName.Size = new System.Drawing.Size(144, 22);
+            this.txtDomainName.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(49, 328);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Domain Adı";
             // 
             // btnLogin
             // 
@@ -136,80 +210,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(128, 128);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(48, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(314, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Active Directory Users and Computers";
-            // 
-            // txtDomainName
-            // 
-            this.txtDomainName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtDomainName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDomainName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDomainName.ForeColor = System.Drawing.Color.White;
-            this.txtDomainName.Location = new System.Drawing.Point(155, 324);
-            this.txtDomainName.Name = "txtDomainName";
-            this.txtDomainName.Size = new System.Drawing.Size(144, 22);
-            this.txtDomainName.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(49, 328);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Domain Adı";
-            // 
-            // btnMinimaze
-            // 
-            this.btnMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimaze.Appearance.Font = new System.Drawing.Font("Webdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btnMinimaze.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMinimaze.Appearance.Options.UseFont = true;
-            this.btnMinimaze.Appearance.Options.UseForeColor = true;
-            this.btnMinimaze.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnMinimaze.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimaze.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnMinimaze.Location = new System.Drawing.Point(321, 2);
-            this.btnMinimaze.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMinimaze.Name = "btnMinimaze";
-            this.btnMinimaze.Size = new System.Drawing.Size(32, 32);
-            toolTipTitleItem1.Text = "Aşağı indir";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.btnMinimaze.SuperTip = superToolTip1;
-            this.btnMinimaze.TabIndex = 19;
-            this.btnMinimaze.Text = "0";
-            this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnClose.Location = new System.Drawing.Point(361, 2);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 32);
-            toolTipTitleItem2.Text = "Uygulamayı Kapat";
-            toolTipItem1.LeftIndent = 6;
-            toolTipItem1.Text = "Uygulamadan çıkmak için kullanınız";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            superToolTip2.Items.Add(toolTipItem1);
-            this.btnClose.SuperTip = superToolTip2;
-            this.btnClose.TabIndex = 18;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmLogin
             // 

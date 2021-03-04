@@ -13,6 +13,7 @@ using SystemManagement.Models;
 
 namespace SystemManagement.Controls
 {
+    [System.Runtime.InteropServices.Guid("F4711088-DAA7-46F6-9B37-15F4EF3EB73D")]
     public partial class frmLogin : Form
     {
         MainForm mainForm;
@@ -28,16 +29,19 @@ namespace SystemManagement.Controls
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
+                
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
             ActiveDirectory ad = new ActiveDirectory();
             mainForm = new MainForm(ad);
             if (txtUserName.Text.Trim().Length>0&&txtPassword.Text.Trim().Length>0&&txtDomainName.Text.Trim().Length>0)

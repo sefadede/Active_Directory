@@ -8,6 +8,7 @@ using System.DirectoryServices;
 
 namespace SystemManagement.Models
 {
+    [System.Runtime.InteropServices.Guid("65E8FC04-BCF2-44FA-B7FD-EDACE3289BC3")]
     public class ActiveDirectory
     {
         public string UserName { get; set; }
@@ -184,7 +185,7 @@ namespace SystemManagement.Models
             try
             {
                 string strPath = "OU=FINANS_1,OU=FINANS,DC=HSTN,DC=LOCAL";
-                ou.ouName = ou.ouName.Replace("LDAP://hstn.local/", "");
+                ou.ouName = ou.ouName.Replace("LDAP://"+DomainName+"/", "");
                 // get just DC portion of distinguished name
                 int dcIndex = strPath.IndexOf("DC=");
                 string dcSubString = strPath.Substring(dcIndex);
