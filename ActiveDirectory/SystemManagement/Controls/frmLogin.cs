@@ -61,10 +61,14 @@ namespace SystemManagement.Controls
             }
            
         }
-
-        private void tsPass_Toggled(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void btnMinimaze_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
